@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -10,40 +12,183 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
-
+/*(grijs #899CA0 en donkergroen #1C2B32*/
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+h2 {
+    padding: 40px 0;
+}
 
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
+body {
+    font-family: 'Poppins', sans-serif;
 
+}
+
+header {
+    color: #1C2B32;
+}
+
+.header-title {
+    font-size: 80px;
+}
+
+header button {
+    color: white;
+    background-color: #1C2B32;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-slogan {
+    font-size: 12px;
+}
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-content h2 {
+    text-align: center;
+}
+
+a {
+    color: #899CA0;
+    background-color: #1C2B32;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1C2B32;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+cite {
+    font-size: 12px;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
 
-
 /*///////////// 3.1 Header /////////////*/
 
+header {
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.header-content {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0 400px 0;
+}
+
+.header-slogan {
+    padding-bottom: 24px;
+}
+
+.form-input-field {
+    padding: 10px 60px 10px 20px;
+    border-radius: 20px 0 0 20px;
+    background-color: transparent;
+    color: #1C2B32;
+}
+
+::placeholder {
+    color: #1C2B32;
+}
+
+.form-button {
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    margin-left: -5px;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+.main-content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+article {
+    position: relative;
+
+}
+
+.quote-icon {
+    position: absolute;
+    left: 40px;
+    width: 24px;
+}
+
+.avatar {
+    width: 30px;
+    position: relative;
+    top: 10px;
+    margin-right: 8px;
+
+}
+
+.customer-review {
+    padding: 50px 80px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 10px 2px #899CA0;
+    border-radius: 10px;
+}
 
 
 /*///////////// 3.3 Support /////////////*/
 
+.support-section img {
+    max-width: 100%;
+    border-radius: 12px;
+}
 
+.support-section p {
+    margin-bottom: 20px;
+}
+
+.link-team {
+    padding: 12px 20px;
+    border-radius: 24px;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+details {
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+details p {
+    margin: 10px 0;
+    padding: 20px 40px;
+    background-color: #899CA0;
+    color: white;
+    border-radius: 24px;
+}
 
 
 /*///////////// 3.5 Footer /////////////*/
